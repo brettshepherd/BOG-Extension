@@ -15,7 +15,7 @@
       "css": ["widget/widget.css"]
     }
   ],
-  "action": {
+  "browser_action": {
     "default_icon": {
       "16": "assets/bog@16.png",
       "48": "assets/bog@48.png",
