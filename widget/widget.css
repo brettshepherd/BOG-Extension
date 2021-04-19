@@ -29,8 +29,11 @@
   border-radius: 0.5rem;
   background-color: #111721;
   border: none;
-  outline: none;
   transition: 0.3s;
+}
+
+.bogged-finance-extension-buttons button:focus {
+  outline: none;
 }
 
 .bogged-finance-extension-buttons button:hover {
