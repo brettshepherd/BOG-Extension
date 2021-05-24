@@ -7,12 +7,15 @@
   background-color: #111721;
   z-index: 99999;
   box-shadow: 0 10px 20px -10px #111721;
+  color: white;
 }
 
 .bogged-finance-extension-title {
   width: 100px;
   display: block;
   margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bogged-finance-extension-buttons {
@@ -46,4 +49,26 @@
   height: 100%;
   object-fit: contain;
   outline: none;
+}
+
+.bogged-finance-extension-buttons-price-title {
+  font-size: 0.5rem;
+  text-align: center;
+  line-height: 0.7rem;
+  margin: 0.2rem 0;
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+
+.bogged-finance-extension-buttons-price-flex {
+  display: flex;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+
+.bogged-finance-extension-buttons-price-platform {
+  margin-right: 0.5rem;
+}
+.bogged-finance-extension-buttons-price-platform-loading {
+  margin: 0 !important;
 }

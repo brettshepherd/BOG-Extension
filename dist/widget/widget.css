@@ -1,0 +1,74 @@
+.bogged-finance-extension {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #111721;
+  z-index: 99999;
+  box-shadow: 0 10px 20px -10px #111721;
+  color: white;
+}
+
+.bogged-finance-extension-title {
+  width: 100px;
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bogged-finance-extension-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.bogged-finance-extension-buttons button {
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  background-color: #111721;
+  border: none;
+  transition: 0.3s;
+}
+
+.bogged-finance-extension-buttons button:focus {
+  outline: none;
+}
+
+.bogged-finance-extension-buttons button:hover {
+  background-color: #272d37;
+}
+
+.bogged-finance-extension-buttons img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  outline: none;
+}
+
+.bogged-finance-extension-buttons-price-title {
+  font-size: 0.5rem;
+  text-align: center;
+  line-height: 0.7rem;
+  margin: 0.2rem 0;
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+
+.bogged-finance-extension-buttons-price-flex {
+  display: flex;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+
+.bogged-finance-extension-buttons-price-platform {
+  margin-right: 0.5rem;
+}
+.bogged-finance-extension-buttons-price-platform-loading {
+  margin: 0 !important;
+}

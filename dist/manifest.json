@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "Bogged.Finance",
+  "version": "0.1",
+  "description": "A tool to provide quick access to Bogged.Finance charts and orders on commonly used crypto platforms.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.coingecko.com/*/*/*",
+        "https://coinmarketcap.com/currencies/*",
+        "https://coinmarketcap.com/*/currencies/*",
+        "https://bscscan.com/token/*",
+        "https://exchange.pancakeswap.finance/*"
+      ],
+      "js": ["widget/content.js"],
+      "css": ["widget/widget.css"]
+    }
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "widget/widget.html",
+        "assets/logo.svg",
+        "assets/order.svg",
+        "assets/charts.svg"
+      ],
+      "matches": ["http://*/*", "https://*/*"],
+      "extension_ids": []
+    }
+  ],
+
+  "options_page": "options/options.html",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "assets/bog@16.png",
+    "48": "assets/bog@48.png",
+    "128": "assets/bog@128.png"
+  }
+}
